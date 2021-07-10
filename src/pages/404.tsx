@@ -9,7 +9,7 @@ import '../../public/assets/scss/pages/error.scss';
 class Error404 extends React.Component {
     render = () => {
         return (
-            <main className="text-center text-light">
+            <main className="text-center">
                 <h1 className="mt-5 error-header">404</h1>
                 <h3 className="error-subscript">Not Found</h3>
             </main>
