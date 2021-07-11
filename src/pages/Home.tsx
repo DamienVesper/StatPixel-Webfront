@@ -12,9 +12,25 @@ import Logo from '../../public/assets/img/logos/splash.png';
 class Home extends React.Component {
     render = () => {
         return (
-            <main className="text-center mt-5 container">
+            <main className="text-center container mt-5">
                 <img src={Logo} alt="StatPixel Logo" className="logo-splash" />
                 <p className="mt-3">Bacon ipsum dolor amet cupim andouille venison, jowl pork loin picanha sausage turducken short loin. Shoulder chicken doner andouille prosciutto. Cow sausage spare ribs doner, turkey fatback boudin. Cow sausage leberkas prosciutto pork belly. Ball tip burgdoggen leberkas prosciutto pig ham strip steak andouille ham hock. Strip steak landjaeger beef, pancetta andouille meatloaf short loin cow buffalo prosciutto cupim t-bone. Chicken t-bone frankfurter flank ham.</p>
+                <div className="stats-wrapper container mt-5">
+                    <div className="row">
+                        <div className="col">
+                            <h2>22,124</h2>
+                            <p>Users</p>
+                        </div>
+                        <div className="col">
+                            <h2>2,124</h2>
+                            <p>Guilds</p>
+                        </div>
+                        <div className="col">
+                            <h2>2,390,124</h2>
+                            <p>Commands</p>
+                        </div>
+                    </div>
+                </div>
             </main>
         );
     }
