@@ -4,5 +4,9 @@ nav {
 }
 
 nav .header-logo {
-    width: 58px;
+    transition: 0.5s;
+}
+
+nav .header-logo:hover {
+    transform: rotate(45deg);
 }

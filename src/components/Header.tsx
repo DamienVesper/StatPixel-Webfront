@@ -4,7 +4,7 @@ import { hot } from 'react-hot-loader';
 
 import '../../public/assets/scss/components/header.scss';
 
-// import Logo from '../../public/assets/img/logo.png'
+import Logo from '../../public/assets/img/logos/header.png';
 
 /**
  * The header of the website.
@@ -16,8 +16,7 @@ class Header extends React.Component {
                 <nav className="navbar navbar-expand-lg navbar-dark">
                     <div className="container-fluid">
                         <a href="/" className="navbar-brand">
-                            {/* <img src={Logo} alt="StatPixel logo" className="header-logo" /> */}
-                            StatPixel
+                            <img src={Logo} alt="StatPixel logo" className="header-logo" />
                         </a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
