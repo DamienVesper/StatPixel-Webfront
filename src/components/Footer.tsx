@@ -10,7 +10,7 @@ import '../../public/assets/scss/components/footer.scss';
 class Footer extends React.Component {
     render = () => {
         return (
-            <main></main>
+            <footer></footer>
         );
     }
 }
