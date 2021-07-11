@@ -10,6 +10,19 @@ main > p {
     font-size: 4em;
 }
 
+.stats-wrapper .stat-users {
+    animation: fadeSplash 2s;
+}
+
+.stats-wrapper .stat-guilds {
+    animation: fadeSplash 2.25s;
+}
+
+.stats-wrapper .stat-commands {
+    animation: fadeSplash 2.5s;
+}
+
+
 @keyframes fadeLogo {
     0% { opacity: 0; transform: translateY(-50px); }
     100% { opacity: 1; transform: translateY(0px);  }
