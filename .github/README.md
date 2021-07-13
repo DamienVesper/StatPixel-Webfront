@@ -1,2 +1,2 @@
-# ReactStarter
- A single-page application starter for React.
+# StatPixel-Webfront
+ The StatPixel website.
