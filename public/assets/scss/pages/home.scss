@@ -32,11 +32,14 @@ p.desc {
     box-shadow: 4px 4px 5px #00000080;
 
     padding: 16px 32px !important;
+    transition: 0.3s;
 }
 
 .btn-wrapper > .btn:hover {
     color: #000000;
     background-color: #FFFFFF;
+    transform: rotate(5deg) scale(90%);
+    border-radius: 10px;
 }
 
 .btn-invite {
