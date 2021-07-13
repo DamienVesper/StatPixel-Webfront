@@ -1,11 +1,15 @@
+// Logo
 .logo-splash {
     animation: fadeLogo 1s;
+    width: 35%;
 }
 
-main > p {
+// General Info
+p.desc {
     animation: fadeSplash 1.5s;
 }
 
+// Bot Stats
 .stats-wrapper h2 {
     font-size: 4em;
 }
@@ -22,6 +26,35 @@ main > p {
     animation: fadeSplash 2.5s;
 }
 
+// Link buttons
+.btn-wrapper > .btn {
+    color: #FFFFFF;
+    box-shadow: 4px 4px 5px #00000080;
+
+    padding: 16px 32px !important;
+}
+
+.btn-wrapper > .btn:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.btn-invite {
+    background-color: #3246a8;
+    animation: fadeSplash 3s;
+}
+
+.btn-wiki {
+    background-color: #2f48ba;
+    animation: fadeSplash 3.25s;
+}
+
+.btn-discord {
+    background-color: #1f35a3;
+    animation: fadeSplash 3.5s;
+}
+
+// Animations
 @keyframes fadeLogo {
     0% { opacity: 0; transform: translateY(-50px); }
     100% { opacity: 1; transform: translateY(0px);  }

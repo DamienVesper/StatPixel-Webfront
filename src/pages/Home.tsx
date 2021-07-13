@@ -13,12 +13,17 @@ class Home extends React.Component {
     render = () => {
         return (
             <main className="text-center container mt-5">
+                <br />
                 <img src={Logo} alt="StatPixel Logo" className="logo-splash" />
-                <p className="mt-3">Bacon ipsum dolor amet cupim andouille venison, jowl pork loin picanha sausage turducken short loin. Shoulder chicken doner andouille prosciutto. Cow sausage spare ribs doner, turkey fatback boudin. Cow sausage leberkas prosciutto pork belly. Ball tip burgdoggen leberkas prosciutto pig ham strip steak andouille ham hock. Strip steak landjaeger beef, pancetta andouille meatloaf short loin cow buffalo prosciutto cupim t-bone. Chicken t-bone frankfurter flank ham.</p>
-                <div className="stats-wrapper container mt-5">
+                <div className="w-50 container my-5">
+                    <p className="desc">Gather near real-time statistics for your Hypixel profile using our Hypixel stats bot. Available for BedWars, SkyWars, Duels and so much more!</p>
+                </div>
+                <br />
+                <br />
+                <div className="stats-wrapper container my-5">
                     <div className="row">
                         <div className="col stat-users">
-                            <h2>22,124</h2>
+                            <h2>22,964</h2>
                             <p>Users</p>
                         </div>
                         <div className="col stat-guilds">
@@ -30,6 +35,11 @@ class Home extends React.Component {
                             <p>Commands</p>
                         </div>
                     </div>
+                </div>
+                <div className="btn-wrapper container my-5">
+                    <a className="btn btn-lg mx-2 btn-invite" href="https://invite.statpixel.net">Invite</a>
+                    <a className="btn btn-lg mx-2 btn-wiki" href="https://wiki.statpixel.net">Wiki</a>
+                    <a className="btn btn-lg mx-2 btn-discord" href="https://discord.statpixel.net">Discord</a>
                 </div>
             </main>
         );

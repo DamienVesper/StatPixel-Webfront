@@ -26,7 +26,7 @@ import Error404 from './pages/404';
 class App extends React.Component {
     render = () => {
         return (
-            <div id="app" className="text-light d-flex flex-column h-100">
+            <div id="app" className="text-light">
                 <Header />
                 <Router>
                     <Switch>
