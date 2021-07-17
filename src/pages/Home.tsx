@@ -5,6 +5,8 @@ import '../../public/assets/scss/pages/home.scss';
 
 import Logo from '../../public/assets/img/logos/splash.png';
 
+import { fetchAPI } from '../utils/api';
+
 /**
  * The landing page of the website.
  */
@@ -27,9 +29,9 @@ class Home extends React.Component {
                             <h2>2,124</h2>
                             <p>Guilds</p>
                         </div>
-                        <div className="col stat-commands">
+                        <div className="col stat-profiles">
                             <h2>2,390,124</h2>
-                            <p>Commands</p>
+                            <p>Profiles</p>
                         </div>
                     </div>
                 </div>
@@ -40,6 +42,17 @@ class Home extends React.Component {
                 </div>
             </main>
         );
+    }
+
+    componentDidMount = async () => {
+        // Get the bot statistics and serialize the data to JSON.
+        const botStats: { guilds: number, users: number, profiles: number } = (await (await fetchAPI(`/statistics`)).json())?.data;
+        if (!botStats) return;
+
+        // Populate the data into the count.
+        document.querySelector(`.stat-guilds > h2`).innerHTML = botStats.guilds.toString();
+        document.querySelector(`.stat-users > h2`).innerHTML = botStats.users.toString();
+        document.querySelector(`.stat-profiles > h2`).innerHTML = botStats.profiles.toString();
     }
 }
 
