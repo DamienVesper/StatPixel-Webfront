@@ -35,9 +35,9 @@ class Home extends React.Component {
                     </div>
                 </div>
                 <div className="btn-wrapper container my-5">
-                    <a className="btn btn-lg mx-2 btn-invite" href="https://statpixel.net/invite">Invite</a>
-                    <a className="btn btn-lg mx-2 btn-wiki" href="https://wiki.statpixel.net">Wiki</a>
-                    <a className="btn btn-lg mx-2 btn-discord" href="https://statpixel.net/discord">Discord</a>
+                    <a className="btn btn-lg mx-2 btn-invite" href="https://statpixel.net/invite" target="_blank" rel="noreferrer">Invite</a>
+                    <a className="btn btn-lg mx-2 btn-wiki" href="https://wiki.statpixel.net" target="_blank" rel="noreferrer">Wiki</a>
+                    <a className="btn btn-lg mx-2 btn-discord" href="https://statpixel.net/discord" target="_blank" rel="noreferrer">Discord</a>
                 </div>
             </main>
         );
