@@ -19,7 +19,6 @@ class Home extends React.Component {
                     <p className="desc">Gather near real-time statistics for your Hypixel profile using our Hypixel stats bot. Available for BedWars, SkyWars, Duels and so much more!</p>
                 </div>
                 <br />
-                <br />
                 <div className="stats-wrapper container my-5">
                     <div className="row">
                         <div className="col stat-users">
