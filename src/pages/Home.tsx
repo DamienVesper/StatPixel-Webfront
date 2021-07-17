@@ -12,8 +12,7 @@ class Home extends React.Component {
     render = () => {
         return (
             <main className="text-center container mt-5">
-                <br />
-                <img src={Logo} alt="StatPixel Logo" className="logo-splash" />
+                <img src={Logo} alt="StatPixel Logo" className="logo-splash mt-4" />
                 <div className="w-50 container my-5">
                     <p className="desc">Gather near real-time statistics for your Hypixel profile using our Hypixel stats bot. Available for BedWars, SkyWars, Duels and so much more!</p>
                 </div>
