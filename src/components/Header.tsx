@@ -30,14 +30,6 @@ class Header extends React.Component {
                                     <a href="/our-staff" className={`nav-link ${window.location.pathname === `/our-staff` ? `active disabled` : ``}`}>Our Staff</a>
                                 </li>
                             </ul>
-                            {/* <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                                <li className="nav-item">
-                                    <a href="/tos" className={`nav-link ${window.location.pathname === `/tos` ? `active disabled` : ``}`}>ToS</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="/privacy-policy" className={`nav-link ${window.location.pathname === `/privacy-policy` ? `active disabled` : ``}`}>Privacy Policy</a>
-                                </li>
-                            </ul> */}
                         </div>
                     </div>
                 </nav>
