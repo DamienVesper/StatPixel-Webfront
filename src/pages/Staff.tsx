@@ -2,9 +2,9 @@ import React from 'react';
 import { hot } from 'react-hot-loader';
 
 /**
- * The about page.
+ * The staff page.
  */
-class About extends React.Component {
+class Staff extends React.Component {
     render = () => {
         return (
             <main></main>
@@ -12,4 +12,4 @@ class About extends React.Component {
     }
 }
 
-export default hot(module)(About);
+export default hot(module)(Staff);

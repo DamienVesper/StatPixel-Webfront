@@ -1,12 +1,9 @@
-// React libraries.
 import React from 'react';
-
 import {
     BrowserRouter as Router,
     Switch,
     Route
 } from 'react-router-dom';
-
 import { hot } from 'react-hot-loader';
 
 import '../public/assets/scss/index.scss';
