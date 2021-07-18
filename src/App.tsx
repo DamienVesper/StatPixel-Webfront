@@ -9,8 +9,8 @@ import { hot } from 'react-hot-loader';
 import '../public/assets/scss/index.scss';
 import 'bootstrap';
 
-import Header from './components/Header';
-import Footer from './components/Footer';
+// import Header from './components/Header';
+// import Footer from './components/Footer';
 
 import Home from './pages/Home';
 import About from './pages/About';
@@ -24,7 +24,7 @@ class App extends React.Component {
     render = () => {
         return (
             <div id="app" className="text-light">
-                <Header />
+                {/* <Header /> */}
                 <Router>
                     <Switch>
                         {/* Landing Page */}
@@ -43,7 +43,7 @@ class App extends React.Component {
                         </Route>
                     </Switch>
                 </Router>
-                <Footer />
+                {/* <Footer /> */}
             </div>
         );
     }
