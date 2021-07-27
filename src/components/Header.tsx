@@ -1,6 +1,4 @@
-// React libraries.
 import React from 'react';
-import { hot } from 'react-hot-loader';
 
 import '../../public/assets/scss/components/header.scss';
 
@@ -35,4 +33,4 @@ class Header extends React.Component {
     }
 }
 
-export default hot(module)(Header);
+export default Header;

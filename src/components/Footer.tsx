@@ -1,6 +1,4 @@
-// React libraries.
 import React from 'react';
-import { hot } from 'react-hot-loader';
 
 import '../../public/assets/scss/components/footer.scss';
 
@@ -15,4 +13,4 @@ class Footer extends React.Component {
     }
 }
 
-export default hot(module)(Footer);
+export default Footer;

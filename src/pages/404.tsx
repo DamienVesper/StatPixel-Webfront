@@ -1,5 +1,4 @@
 import React from 'react';
-import { hot } from 'react-hot-loader';
 
 import '../../public/assets/scss/pages/error.scss';
 
@@ -17,4 +16,4 @@ class Error404 extends React.Component {
     }
 }
 
-export default hot(module)(Error404);
+export default Error404;

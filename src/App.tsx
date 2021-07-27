@@ -4,7 +4,6 @@ import {
     Switch,
     Route
 } from 'react-router-dom';
-import { hot } from 'react-hot-loader';
 
 import '../public/assets/scss/index.scss';
 import 'bootstrap';
@@ -49,4 +48,4 @@ class App extends React.Component {
     }
 }
 
-export default hot(module)(App);
+export default App;

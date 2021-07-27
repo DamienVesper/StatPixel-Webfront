@@ -1,5 +1,4 @@
 import React from 'react';
-import { hot } from 'react-hot-loader';
 
 /**
  * The about page.
@@ -12,4 +11,4 @@ class About extends React.Component {
     }
 }
 
-export default hot(module)(About);
+export default About;

@@ -1,5 +1,4 @@
 import React from 'react';
-import { hot } from 'react-hot-loader';
 
 import '../../public/assets/scss/pages/home.scss';
 
@@ -56,4 +55,4 @@ class Home extends React.Component {
     }
 }
 
-export default hot(module)(Home);
+export default Home;
