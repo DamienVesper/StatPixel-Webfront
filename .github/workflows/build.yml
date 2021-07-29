@@ -1,33 +1,27 @@
-name: Node.js CI
-
-on:
-  push:
-  pull_request:
-
+on: push
+name: 🚀 Deploy website on push
 jobs:
-  build:
-    name: Build
+  web-deploy:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [16.x]
-
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
 
-      - name: Install Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
-        with:
-          node-version: ${{ matrix.node-version }}
+    - name: Use Node.js 12
+      uses: actions/setup-node@v2-beta
+      with:
+        node-version: '12'
 
-      - name: Install Packages
-        uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: install
+    - name: 🔨 Build Project
+      run: |
+        yarn
+        yarn build
 
-      - name: Build (Production)
-        uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: build
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.1.0
+      with:
+        server: ${{ secrets.ftp_ip }}
+        username: ${{ secrets.ftp_username }}
+        password: ${{ secrets.ftp_password }}
+        local-dir: ./dist/
