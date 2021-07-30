@@ -21,15 +21,15 @@ class Home extends React.Component {
                 <div className="stats-wrapper container my-5">
                     <div className="row">
                         <div className="col stat-users">
-                            <h2>22,964</h2>
+                            <h2>0</h2>
                             <p>Users</p>
                         </div>
                         <div className="col stat-guilds">
-                            <h2>2,124</h2>
+                            <h2>0</h2>
                             <p>Guilds</p>
                         </div>
                         <div className="col stat-profiles">
-                            <h2>2,390,124</h2>
+                            <h2>0</h2>
                             <p>Profiles</p>
                         </div>
                     </div>
