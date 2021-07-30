@@ -45,7 +45,7 @@ class Home extends React.Component {
 
     componentDidMount = async () => {
         // Get the bot statistics and serialize the data to JSON.
-        const botStats: { guilds: number, users: number, profiles: number } = (await (await fetchAPI(`/statistics`)).json())?.data;
+        const botStats: { guilds: number, users: number, profiles: number } = (await (await fetchAPI(`/statistics`)).json());
         if (!botStats) return;
 
         // Populate the data into the count.
