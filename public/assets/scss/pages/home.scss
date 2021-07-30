@@ -1,12 +1,20 @@
 // Logo
 .logo-splash {
     animation: fadeLogo 1s;
-    width: 35%;
+    width: 75%;
 }
 
 // General Info
 p.desc {
     animation: fadeSplash 1.5s;
+}
+
+// Responsive row
+.btn-wrapper, .stats-wrapper {
+    gap: 0.5em;
+
+    flex-direction: column;
+    align-items: center;
 }
 
 // Bot Stats
@@ -26,7 +34,6 @@ p.desc {
     animation: fadeSplash 2.5s;
 }
 
-// Link buttons
 .btn-wrapper > .btn {
     color: #FFFFFF;
     box-shadow: 4px 4px 5px #00000080;
@@ -66,4 +73,25 @@ p.desc {
     0% { opacity: 0; }
     50% { opacity: 0; transform: translateY(-25px); }
     100% { opacity: 1; transform: translateY(0px); }
+}
+
+@media only screen and (min-width: 000px) {
+    .logo-splash {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 75rem) {
+    .btn-wrapper, .stats-wrapper {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .stats-wrapper {
+        gap: 12em;
+    }
+
+    .logo-splash {
+        width: 35%;
+    }
 }

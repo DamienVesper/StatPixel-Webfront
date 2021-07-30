@@ -18,26 +18,24 @@ class Home extends React.Component {
                     <p className="desc">Gather near real-time statistics for your Hypixel profile using our Hypixel stats bot. Available for BedWars, SkyWars, Duels and so much more!</p>
                 </div>
                 <br />
-                <div className="stats-wrapper container my-5">
-                    <div className="row">
-                        <div className="col stat-users">
-                            <h2>0</h2>
-                            <p>Users</p>
-                        </div>
-                        <div className="col stat-guilds">
-                            <h2>0</h2>
-                            <p>Guilds</p>
-                        </div>
-                        <div className="col stat-profiles">
-                            <h2>0</h2>
-                            <p>Profiles</p>
-                        </div>
+                <div className="stats-wrapper d-flex my-5">
+                    <div className="stat-users">
+                        <h2>0</h2>
+                        <p>Users</p>
+                    </div>
+                    <div className="stat-guilds">
+                        <h2>0</h2>
+                        <p>Guilds</p>
+                    </div>
+                    <div className="stat-profiles">
+                        <h2>0</h2>
+                        <p>Profiles</p>
                     </div>
                 </div>
-                <div className="btn-wrapper container my-5">
-                    <a className="btn btn-lg mx-2 btn-invite" href="https://statpixel.net/invite" target="_blank" rel="noreferrer">Invite</a>
-                    <a className="btn btn-lg mx-2 btn-wiki" href="https://wiki.statpixel.net" target="_blank" rel="noreferrer">Wiki</a>
-                    <a className="btn btn-lg mx-2 btn-discord" href="https://statpixel.net/discord" target="_blank" rel="noreferrer">Discord</a>
+                <div className="btn-wrapper d-flex mt-5">
+                    <a className="btn btn-lg btn-invite" href="https://statpixel.net/invite" target="_blank" rel="noreferrer">Invite</a>
+                    <a className="btn btn-lg btn-wiki" href="https://wiki.statpixel.net" target="_blank" rel="noreferrer">Wiki</a>
+                    <a className="btn btn-lg btn-discord" href="https://statpixel.net/discord" target="_blank" rel="noreferrer">Discord</a>
                 </div>
             </main>
         );
